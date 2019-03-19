@@ -1,0 +1,12 @@
+#!/usr/bin/env python
+
+import rospy
+
+from comp313p_explorer.better_explorer_node import BetterExplorerNode
+
+if __name__ == '__main__':
+    try:
+        explorerNode = BetterExplorerNode()
+        explorerNode.run()
+    except rospy.ROSInterruptException:
+        pass
